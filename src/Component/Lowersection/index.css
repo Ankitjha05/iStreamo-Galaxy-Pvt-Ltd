@@ -149,10 +149,18 @@ option {
 }
 
 .calenderbuttonsection {
+    margin-left: 32.5vw;
+    margin-top: 21.7rem;
+    position: relative;
     position: absolute;
-    margin-left: 34vw;
+    padding-left: 11px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-right: 26.3rem;
     z-index: 1;
-    margin-top: 22rem;
+    background: #1d2648;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
 }
 
 .calenderbuttonsection button{
@@ -162,9 +170,10 @@ option {
     margin-left: 6px;
 }
 
-.datepicker{
-    background-color: #283046;
-}
 .calendersection{
     background-color: #283046;
+}
+
+.calenderbuttonsection{
+
 }
