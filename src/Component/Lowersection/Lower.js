@@ -17,7 +17,7 @@ export function Lower(props) {
         verticalAlign: "0px"
     }
 
-    const options = [10,30,40,50,100];
+    const options = [10,50,100,500,1000];
 
     const [page, setPage] = useState(50);
 
