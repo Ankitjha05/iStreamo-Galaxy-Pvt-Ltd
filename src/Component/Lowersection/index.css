@@ -1,0 +1,117 @@
+.lowercontainer{
+    background-color: #283046;
+    min-height: fit-content;
+    padding: 1rem;
+    margin: 0;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.totalinstalled{
+    padding-bottom: 1rem;
+    position: relative;
+    left: 3rem;
+}
+.totalinstalled span{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.totalinstalled img {
+    float: left;
+    padding-right: 0.5rem;
+}
+
+.lowercontainer ul{
+    margin: 0;
+    padding: 0;
+}
+
+.lowercontainer li{
+    margin: 0;
+    min-height: fit-content;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 0.2rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.lowercontainer span{
+    margin: 0 0 0 0;
+    padding-left: 0;
+    color: white;
+}
+
+.firstlist{
+    background-color: #271C1C;
+    border: 0.5px solid #707070;
+    padding: 0.8rem;
+}
+#firstlist{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.lowercontainer > div{
+    position: relative;
+    bottom: 0.3rem;
+    display: flex;
+    justify-content: flex-start;
+    /* position: relative;
+    left: -26rem;
+    bottom: 0.3rem; */
+}
+
+select{
+    background: transparent;
+    color: white;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+option{
+    background: hsla(0, 0%, 85%, 1);
+    border: 1px solid hsla(0, 0%, 44%, 1);
+    color: hsla(0, 0%, 51%, 1);
+    width: 138px;
+}
+option {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .lowercontainer>div:last-child{
+    display: flex;
+    padding: 4px;
+    justify-content: flex-end;
+    width: 70vw;
+  }
+
+  .buttoncontainer button{
+    background: transparent;
+    color: whitesmoke;
+    margin: 9px;
+    border: none;
+    padding: 0.3rem;
+  }
+
+  .buttoncontainer button:hover{
+    cursor: pointer;
+    background-color: rgb(68, 68, 228);
+    border-radius: 50%;
+    transform: scale(1.5);
+    padding: 0.3rem;
+  }
+
+  .buttoncontainer>div {
+    border-radius: 46px;
+    background-color: hsl(227deg 61% 18%);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 46px;
+    align-items: center;
+}

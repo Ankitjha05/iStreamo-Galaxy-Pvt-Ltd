@@ -1,0 +1,47 @@
+.navcontainer{
+    /* position: absolute; */
+    min-width: 22vw;
+    background: #283046;
+    color: #ffff;
+    padding-bottom: 5rem;
+    padding-top: 1rem;
+    /* min-height: 100%; */
+}
+.navcontainer ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li{
+    display: block;
+    margin-top: 2rem;
+}
+
+.navbarlogo{
+    display: inline-block;
+    width: 50px;
+  height: 50px;
+  background: hsla(0, 0%, 100%, 1) 0% 0% no-repeat padding-box;
+  border: 1px solid hsla(0, 0%, 44%, 1);
+  opacity: 1;
+  border-radius: 50%;
+  background-image: url("./Media/Capture.PNG");
+  background-position: center;
+  background-size:cover;
+}
+
+.navbarheader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarheader span{
+    position: relative;
+    left: 0.8rem;
+    color: rgb(48 48 213);
+    font-size: x-large;
+    font-weight: 700;
+    letter-spacing: -1px;
+}

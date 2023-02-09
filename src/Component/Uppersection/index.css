@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.uppersection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  background-color: hsla(224, 27%, 22%, 1);
+  text-align: left;
+  font: normal normal bold 20px/23px Marine;
+  letter-spacing: 0px;
+  color: hsla(0, 0%, 100%, 1);
+  opacity: 1;
+}
+
+.uppersection span {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    10px/11px var(--unnamed-font-family-marine);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+  text-align: left;
+  font: normal normal bold 10px/11px Marine;
+  letter-spacing: 0px;
+  color: hsla(0, 0%, 100%, 1);
+}
+
+.inneruppersection {
+  display: flex;
+  flex-wrap: wrap;
+  --gap: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+.inneruppersection > * {
+  margin-left: var(--gap);
+}
+
+.inneruppersection_img {
+  width: 63px;
+  height: 63px;
+  background: hsla(0, 0%, 100%, 1) 0% 0% no-repeat padding-box;
+  border: 1px solid hsla(0, 0%, 44%, 1);
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.installedlogo{
+  background-image: url("./Media/installedlogo.PNG");
+  background-position: center;
+}
+
+.uninstalledlogo{
+  background-image: url("./Media/unistalledlogo.PNG");
+  background-position: center;
+}
