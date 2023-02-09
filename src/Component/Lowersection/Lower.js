@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import "./index.css";
 import android from "./Media/android.svg"
 import iphone from "./Media/iphone.svg"
+// import { Calendar } from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+import Calender from './Calender';
+
 
 export function Lower(props) {
 
@@ -35,15 +39,28 @@ export function Lower(props) {
         return arr;
     }
 
+    //for toggling the calender
+
+    const [calenderactive, setcalenderactive] = useState(false);
+
+    const handleclickbutton = ()=>{
+
+        setcalenderactive(current => !current);
+    }
+
     return (
         <div className='lowercontainer'>
-            <div><span>Show  </span>
+            <div className='lowercontainerheader'><span>Show  </span>
                 <select defaultValue={50} onChange={handlechnage}>
                     {options.map((ele, ind)=>{
                         return <option value={ele} key={ind}>{ele}</option>
                     })}
                 </select>
                 <span>  Entries</span>
+                <button onClick={handleclickbutton}>Select Duration</button>
+            </div>
+            <div id={!calenderactive?"":"hidden"} className="calendersection">
+                <Calender buttonclick={handleclickbutton} date={props.date}/>
             </div>
             <ul>
                 <li id='firstlist' className='firstlist'>

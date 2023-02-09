@@ -8,8 +8,10 @@ function App() {
 
   const [page, setPage] = useState(1);
   const [limit, setlimit] = useState(50);
+  const [startdate, setstartdate] = useState("2022-04-01");
+  const [enddate, setenddate] = useState("2022-08-24");
 
-  const url = `https://admindevapi.wowtalent.live/api/admin/dashboard/installstatasticlist?fromdate=2022-04-01&todate=2022-08-24&page=${page}&limit=${limit}`;
+  const url = `https://admindevapi.wowtalent.live/api/admin/dashboard/installstatasticlist?fromdate=${startdate}&todate=${enddate}&page=${page}&limit=${limit}`;
 
   const url2 = "https://admindevapi.wowtalent.live/api/admin/dashboard/installstatasticcount?fromdate=2022-04-01&todate=2022-08-24&page=1&limit=10";
 
@@ -41,6 +43,21 @@ const [totaldocs, settotaldocs] = useState();
     getdata();
   }
 
+  const updatedatevale = (val1, val2)=>{
+    setstartdate(val1);
+    setenddate(val2);
+  }
+
+  // useEffect(()=>{
+  //   getdata();
+  //   // eslint-disable-next-line 
+  // },[startdate])
+  
+  useEffect(()=>{
+    getdata();
+    // eslint-disable-next-line 
+  },[enddate])
+
   useEffect(()=>{
     getdata();
     // eslint-disable-next-line 
@@ -62,7 +79,7 @@ const [totaldocs, settotaldocs] = useState();
       <Navbar/>
       <div className='rightside'>
       <Upper list={datalist2}/>
-      <Lower total={totaldocs} pagenumber={updatepagestate} setlimit={updateusestate} list={datalist}/>
+      <Lower date={updatedatevale} total={totaldocs} pagenumber={updatepagestate} setlimit={updateusestate} list={datalist}/>
       </div>
     </div>
   );
