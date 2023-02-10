@@ -178,16 +178,13 @@ option {
     position: absolute;
     margin-left: 32.5vw;
     /* margin-top: -0.5rem; */
+    top: 0.2rem;
     padding-left: 11px;
     padding-bottom: 7px;
-    padding-top: 7px;
+    padding-top: 2px;
     padding-right: 24.5rem;
     z-index: 1;
     background: #1d2648;
     border-top-left-radius:15px;
     border-top-right-radius:15px;
-}
-
-.calender_topsection>span{
-    /* background-color: red; */
 }
