@@ -13,7 +13,7 @@ function App() {
 
   const url = `https://admindevapi.wowtalent.live/api/admin/dashboard/installstatasticlist?fromdate=${startdate}&todate=${enddate}&page=${page}&limit=${limit}`;
 
-  const url2 = "https://admindevapi.wowtalent.live/api/admin/dashboard/installstatasticcount?fromdate=2022-04-01&todate=2022-08-24&page=1&limit=10";
+  const url2 = `https://admindevapi.wowtalent.live/api/admin/dashboard/installstatasticcount?fromdate=${startdate}&todate=${enddate}&page=1&limit=10`;
 
 
 const [datalist, setDatalist] = useState([]);
@@ -46,12 +46,13 @@ const [totaldocs, settotaldocs] = useState();
   const updatedatevale = (val1, val2)=>{
     setstartdate(val1);
     setenddate(val2);
+    getdata2();
   }
 
-  // useEffect(()=>{
-  //   getdata();
-  //   // eslint-disable-next-line 
-  // },[startdate])
+  useEffect(()=>{
+    getdata2();
+    // eslint-disable-next-line 
+  },[enddate])
   
   useEffect(()=>{
     getdata();

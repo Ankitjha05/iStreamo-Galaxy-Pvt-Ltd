@@ -28,10 +28,13 @@ const Calender = (props) => {
 
     return (
         <div className='.datepicker'>
+            <div className='calender_topsection'>
+                <span>Select duration date</span>
+            </div>
             <DateRangePicker
                 onChange={item => setState({ ...state, ...item })}
                 months={1}
-                minDate={addDays(new Date(2022, 4, 1), 0)}
+                minDate={addDays(new Date(2022, 3, 1), 0)}
                 maxDate={addDays(new Date(), 900)}
                 direction="vertical"
                 //   scroll={{ enabled: true }}
